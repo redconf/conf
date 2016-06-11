@@ -1,0 +1,8 @@
+{
+	"server":"119.28.4.246",
+	"server-port":"19192",
+	"local_port":"1080",
+	"password":"Emao2345",
+	"timeout":600,
+	"method":"aes-256-cfb"
+}
