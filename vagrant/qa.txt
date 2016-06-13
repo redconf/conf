@@ -1,0 +1,16 @@
+1.Authentication failure. Retrying
+一、mkdir ~/.ssh/
+
+ cd ~/.ssh
+
+ wget http://github.com/mitchellh/vagrant/raw/master/keys/vagrant
+
+ wget http://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub
+
+ mv vagrant.pub authorized_keys
+ 二、
+ vagrant ssh-config//查看公钥私钥是否匹配
+config.ssh.private_key_path = "/Users/xxxx/.ssh/id_rsa"
+config.ssh.forward_agent = true
+config.ssh.username="xxxx"//配置默认登录用户
+ cat >>~/.ssh/authorized_keys
